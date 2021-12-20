@@ -3,8 +3,8 @@ from myapp import views
 
 
 urlpatterns = [
-    path("category/", views.CategoryListCreateView.as_view()),
-    path("category/<int:pk>/", views.CategoryRUDView.as_view()),
-    path("product/", views.ProductListCreateView.as_view()),
-    path("product/<int:pk>/", views.ProductRUDView.as_view()),
+    path("category/", views.CategoryListView.as_view()),
+    path("post/category/", views.CategoryCreateView.as_view()),
+    path("product/", views.ProductListView.as_view()),
+    path("post/product/", views.ProductCreateView.as_view()),
 ]
